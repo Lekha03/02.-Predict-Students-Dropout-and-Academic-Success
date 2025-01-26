@@ -1,6 +1,7 @@
 from ucimlrepo import fetch_ucirepo
 import pandas as pd
 from dataanalysis import *
+from datamodelling import *
   
 # fetch dataset 
 predict_students_dropout_and_academic_success = fetch_ucirepo(id=697) 
@@ -14,12 +15,12 @@ y = predict_students_dropout_and_academic_success.data.targets
   
 # variable information 
 #print(predict_students_dropout_and_academic_success.variables)
-
+description=predict_students_dropout_and_academic_success.variables
 """-----------------------------------------------------------------------------------------------------------------------"""
-
 #READ DATA SET
 
 Dataset=pd.concat([X,y],axis=1)
+
 #print(Dataset.head(10))
 
 
@@ -27,6 +28,10 @@ Dataset=pd.concat([X,y],axis=1)
 
 #DATA ANALYSIS
 
-result=DataAnalysis(Dataset)
+Ana_Data, org_Data=DataAnalysis(Dataset)
+
+#DATA MODELLING
+
+Predict_data=DataModelling(Ana_Data, org_Data)
 
 
