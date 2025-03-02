@@ -19,9 +19,9 @@ def DataAnalysis(dataset):
     for i in categorical_features:
         dataset[i]=dataset[i].astype('object')
     #print(dataset.dtypes)
-    dataset=pd.get_dummies(dataset,drop_first=True)
+    #dataset=pd.get_dummies(dataset,drop_first=True)
     
-    org_data=dataset.copy()
+    #org_data=dataset.copy()
     #DATA NORMALIZATION
     print(dataset.head(5))
     normal=[]
@@ -34,7 +34,7 @@ def DataAnalysis(dataset):
     print(normal)
 
 
-    return dataset,org_data
+    return dataset
 
 
 

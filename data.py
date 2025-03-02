@@ -28,10 +28,10 @@ Dataset=pd.concat([X,y],axis=1)
 
 #DATA ANALYSIS
 
-Ana_Data, org_Data=DataAnalysis(Dataset)
+Ana_Data=DataAnalysis(Dataset)
 
 #DATA MODELLING
 
-Predict_data=DataModelling(Ana_Data, org_Data)
+Predict_data=DataModelling(Ana_Data)
 
 
