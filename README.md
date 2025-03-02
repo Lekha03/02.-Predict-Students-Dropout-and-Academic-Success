@@ -24,7 +24,7 @@ Ensure you have:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Predict_Student_Dropout.git
+   git clone https://github.com/Lekha03/02.-Predict-Students-Dropout-and-Academic-Success.git
    cd Predict_Student_Dropout
    ```
 2. Install dependencies:
